@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/bt5/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        
+    </head>
+    <body>
+
+        <header>
+            <h1>Galeria de Filmes - eletiva 1º período</h1>
+          
+          </header>
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> ELETIVA IEMA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'cad_filmes' %}">ADICIONAR FILME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'cad_categoria' %}">ADICIONAR CATEGORIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  LOGIN
+                </span>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container mt-5 ">
+            {% block content %}
+
+            <div class=" p-3 bg-secondary rounded box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class=" p-3 bg-secondary rounded mt-2 box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div> 
+            </div>
+
+            <div class=" p-3 bg-secondary rounded mt-2 box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div> 
+            </div>
+
+            <div class=" p-3 bg-secondary rounded mt-2 box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div> 
+            </div>
+
+            <div class=" p-3 bg-secondary rounded mt-2 box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div> 
+            </div>
+
+            <div class=" p-3 bg-secondary rounded mt-2 box-video">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                    </div>
+                     <div class="col-md-8">
+                        <h3>Guitarrista Paulo Assunção</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                        </p>
+                    </div>
+                   
+                </div> 
+            </div>
+            
+            {% endblock content %}
+          </div>
+          <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="{% static 'js/main.js' %}" async defer></script>
+        <!--plugin ScrollReveal -->
+        
+    </body>
+</html>

@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(76, 76, 226);
+    padding: 16px 0;
+    display: flex;
+    border-bottom: 16px solid rgb(30, 30, 160);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+}
+
+.video {
+
+
+
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+
+
+}
+
+.box-video {
+    visibility: hidden;
+}
