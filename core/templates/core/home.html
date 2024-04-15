@@ -54,20 +54,27 @@
         <div class="container mt-5 ">
             {% block content %}
 
-            <div class=" p-3 bg-secondary rounded box-video">
+            {% for filmes in object_list %}
+
+            <div class=" p-3 bg-secondary rounded mt-2  box-video">
                 <div class="row">
                     <div class="col-md-4">
-                        <iframe class="video"  src="https://www.youtube.com/embed/LjbS8Cfo8A4?si=OIoSggkR_cXFp1j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+                        <iframe class="video"  src="{{filmes.url_do_filme}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
                     </div>
                      <div class="col-md-8">
-                        <h3>Guitarrista Paulo Assunção</h3>
+                        <h3>{{filmes.titulo}}</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque corrupti aliquam sapiente consequuntur ea nisi recusandae adipisci ullam dolor aspernatur qui. Expedita magnam ullam laboriosam repudiandae obcaecati mollitia tempore?
+                           {{filmes.descricao}}
                         </p>
+                        {{filmes.url}}
                     </div>
                    
                 </div>
             </div>
+
+            {% endfor %}
+
+            
 
             <div class=" p-3 bg-secondary rounded mt-2 box-video">
                 <div class="row">

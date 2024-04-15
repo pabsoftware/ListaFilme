@@ -16,14 +16,14 @@
           {% csrf_token %}
           {% bootstrap_form form %}
           
-          {% buttons %}
+     
           <button type="submit" class="btn btn-success">
             <i class="bi bi-check-lg"></i> Salvar
           </button>
 
           <a href="{% url 'home' %}" class="btn btn-danger"> <i class="bi bi-arrow-return-left"></i> Cancelar
           </a>
-          {% endbuttons %}
+
         </form>
 
       </div>

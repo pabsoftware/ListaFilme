@@ -21,7 +21,7 @@ def cad_filmes(request):
 
 
 def cad_Categoria(request):
-    template_name = 'cadfilmes/cad_filmes.html'
+    template_name = 'cadfilmes/cad_categoria.html'
     form = FormCategoria(request.POST or None)
     if request.method == 'GET': 
         context = {'form' : form}
@@ -34,3 +34,4 @@ def cad_Categoria(request):
 
     context = {'form' : form}
     return render(request, template_name, context)
+
